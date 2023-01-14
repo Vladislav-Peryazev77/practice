@@ -1,0 +1,8 @@
+.colored-true {
+    border: solid red 2px;
+    border-radius: 3.5px;
+}
+.colored-false {
+    border: solid green 2px;
+    border-radius: 3.5px;
+}
