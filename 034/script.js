@@ -9,5 +9,5 @@ but.addEventListener('click', function() {
         if (i < 0) {
             clearInterval(timerId);
         }
-    }, 1000);
+    }, 100);
 });
