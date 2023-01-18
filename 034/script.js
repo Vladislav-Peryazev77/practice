@@ -2,7 +2,7 @@
 // Сделайте кнопку, по нажатию на которую в консоль будет
 //  выводится обратный отсчет, начиная с 100.
 let but = document.querySelector('button');
-but.addEventListener('click', function() {
+but.addEventListener('click', function func() {
     let i = 100;
     let timerId = setInterval(function() {
         console.log(i--);
@@ -10,4 +10,5 @@ but.addEventListener('click', function() {
             clearInterval(timerId);
         }
     }, 100);
+    this.removeEventListener('click', func);
 });
