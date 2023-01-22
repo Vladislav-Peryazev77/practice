@@ -1,16 +1,7 @@
 "use strict";
-// Дана кнопка. Дан абзац, текстом которого является число,
-//  например, 10. По нажатию на кнопку запустите таймер, который 
-//  каждую секунду будет уменьшать текст абзаца на 1. Как только 
-//  значение абзаца станет равно нулю - остановите таймер.
-let but = document.querySelector('button');
-let p = document.querySelector('p');
-but.addEventListener('click', function func() {
-    let timerId = setInterval(function() {
-        p.textContent--;
-        if (p.textContent === '0') {
-            clearInterval(timerId);
-        }
-    }, 1000);
-    this.removeEventListener('click', func);
-});
+// Дан инпут с числом. Сделайте так, чтобы каждую секунду 
+// в нем появлялся квадрат того числа, которое в нем записано.
+let input = document.querySelector('input');
+setInterval(function() {
+    input.value **= 2;
+}, 1000);

@@ -17,6 +17,6 @@ but.addEventListener('click', function (){
         return array;
     } 
     let result = shuffle(array);
-    elem.value = result;
+    elem.value = result.join('');
 });
 
