@@ -1,0 +1,13 @@
+p {
+	font-size: 100px;
+	margin: 0;
+}
+.container {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1900px;
+	height: 1000px;
+	border: solid 1px black;
+}
