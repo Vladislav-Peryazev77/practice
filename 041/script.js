@@ -1,15 +1,17 @@
 "use strict";
-// Дан инпут. В него вводится число. По потери фокуса сделайте так,
-//  чтобы в абзаце ниже начал тикать обратный отсчет, начиная с введенного числа.
-//   Когда отсчет дойдет до нуля - он должен закончится.
+// Дан инпут, кнопка и абзац. В инпут вводится какое-то число. 
+// По нажатию на кнопку запишите введенное число в текст абзаца и
+// запустите обратный отсчет в абзаце: пусть каждую секунду число в 
+// абзаце уменьшается на единицу, пока не дойдет до нуля.
 let input = document.querySelector('input');
+let button = document.querySelector('button');
 let p = document.querySelector('p');
-input.addEventListener('blur', function() {
-    let self = input.value;
+button.addEventListener('click', function() {
+    p.textContent = input.value;
     let timerId = setInterval(function() {
-        p.textContent = self--;
-        if (p.textContent === '0') {
-            clearInterval(timerId);
-        }
+        p.textContent--;
     }, 1000);
+    if (p.textContent == '0') {
+        clearInterval(timerId);
+    }
 });
