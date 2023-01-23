@@ -1,0 +1,25 @@
+div {
+	width: 200px;
+	height: 200px;
+	background-image: url('E:\to-do-list\images\galo4ka.svg');
+	background-size: 100%;
+}
+input[type="checkbox"] {
+	display: none;
+}
+label {
+	padding-left: 20px;
+}
+label::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: solid 1px #393A4B;
+	transition: 0.2s;
+}
+input[type="checkbox"]:checked + label::before {
+	background-image: url('E:\to-do-list\images\galo4ka.svg');
+	background-size: 100%;
+}
