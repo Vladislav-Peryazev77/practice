@@ -1,4 +1,5 @@
 "use strict";
+
 let ps = document.querySelectorAll('p');
 for ( let p of ps) {
     p.innerHTML = `<span>${p.textContent}</span>`;
