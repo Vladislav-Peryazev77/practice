@@ -9,7 +9,7 @@ let timerId;
 start.addEventListener('click', function() {
 	timerId = setInterval(function() {
 		p.textContent++;
-	}, 10000);
+	}, 1000);
 });
 
 stop.addEventListener('click', function() {

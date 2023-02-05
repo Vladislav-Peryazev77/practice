@@ -1,6 +1,7 @@
 p {
 	font-size: 100px;
 	margin: 0;
+	color: red;
 }
 .container {
 	margin: 0;
@@ -10,4 +11,5 @@ p {
 	width: 1900px;
 	height: 1000px;
 	border: solid 1px black;
+	background-color: black;
 }

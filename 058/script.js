@@ -1,9 +1,9 @@
 "use strict";
 // Дан следующий массив с работниками:
 let employees = [
-	{name: 'employee1', age: 30, salary: '400$'},
-	{name: 'employee2', age: 31, salary: '500$'},
-	{name: 'employee3', age: 32, salary: '600$'},
+	{name: 'employee1', age: 30, salary: 400},
+	{name: 'employee2', age: 31, salary: 500},
+	{name: 'employee3', age: 32, salary: 600},
 ];
 // Выведите элементы этого массива в виде HTML таблицы.
 // Модифицируйте предыдущую задачу так, чтобы по клику на 
