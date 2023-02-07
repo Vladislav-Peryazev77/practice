@@ -21,7 +21,7 @@ function order(words){
       }
     }
   }
-  for ( let i = 1; i <= 9; i++) {
+  for ( let i = 1; i <= 9;i++) {
     if(numbers[i]) {
       result.push(numbers[i])
     }
