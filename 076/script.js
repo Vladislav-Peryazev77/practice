@@ -9,7 +9,6 @@
 // Для данного массива numbers сумма кубов должна равняться 1158411.
 const numbers = [10, 4, 100, -5, 54, 2];
 let sum = 0;
-
 1./*
 for ( let i = 0 ; i < numbers.length; i++) {
     sum += numbers[i] ** 3;
