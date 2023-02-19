@@ -16,7 +16,7 @@ const tasks = [
         text: 'Выполнить ДЗ после урока', 
     }, 
 ]
-const createTaskItem = (taskId, taskText) => {
+const createTaskItem = ((taskId, taskText) => {
     const taskItem = document.createElement('div');
     taskItem.className = 'task-item';
     taskItem.dataset.taskId = taskId;
@@ -25,37 +25,38 @@ const createTaskItem = (taskId, taskText) => {
     taskItemMainContainer.className = 'task-item__main-container';
 
     const taskItemMainContent = document.createElement('div');
-    taskItemMainContent.className = 'task-item__main-content';
+    taskItemMainContainer.className = 'task-item__main-content';
 
     taskItem.append(taskItemMainContainer);
     taskItemMainContainer.append(taskItemMainContent);
 
     const checkboxForm = document.createElement('form');
-    checkboxForm.className = 'checkbox-form';
+    checkboxForm.className = 'chechbox-form';
+    taskItemMainContent.append(checkboxForm);
 
-    const inputCheckbox = document.createElement('input');
-    inputCheckbox.type = 'checkbox';
-    inputCheckbox.className = 'checkbox-form__checkbox';
-    const inputId = `task-${taskId}`;
-    inputCheckbox.id = inputId;
+    const inputCheckBox = document.createElement('input');
+    inputCheckBox.className = 'checkbox-form__checkbox';
+    inputCheckBox.type = 'checkbox';
+    const inputId = `task${taskId}`;
+    inputCheckBox.id = taskId;
 
-    const labelCheckbox = document.createElement('label');
-    labelCheckbox.htmlFor = inputId;
+    const labelCheckBox = document.createElement('label');
+    labelCheckBox.htmlFor = inputId;
 
     const taskItemText = document.createElement('span');
     taskItemText.className = 'task-item__text';
-    taskItemText.innerText = taskText;
+    taskItemText.textContent = taskText;
 
     const deleteButton = document.createElement('button');
     deleteButton.className = 'task-item__delete-button default-button delete-button';
-    deleteButton.innerText = 'Удалить';
+    deleteButton.textContent = 'Удалить';
 
     taskItemMainContent.append(checkboxForm, taskItemText);
-    checkboxForm.append(inputCheckbox, labelCheckbox);
-    taskItemMainContainer.append(deleteButton);
+    checkboxForm.append(inputCheckBox, labelCheckBox);
+    taskItemMainContainer.append(taskItemMainContent);
 
     return taskItem;
-}
+});
 
 const tasksListContainer = document.querySelector('.tasks-list');
 tasks.forEach((task) => {
