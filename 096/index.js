@@ -172,6 +172,7 @@ confirmButton.addEventListener('click', () => {
     }
 });
 
+
 const tasksList = document.querySelector('.tasks-list');
 tasksList.addEventListener('click', (event) => {
     const { target } = event;
