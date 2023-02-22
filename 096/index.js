@@ -154,6 +154,7 @@ const createDeleteModal = (text) => {
 }
 
 
+
 let targetTaskIdToDelete = null;
 const {
     deleteModal, cancelButton, confirmButton, modalOverlay,
@@ -171,6 +172,7 @@ confirmButton.addEventListener('click', () => {
         modalOverlay.classList.add('modal-overlay_hidden');
     }
 });
+
 
 
 const tasksList = document.querySelector('.tasks-list');
