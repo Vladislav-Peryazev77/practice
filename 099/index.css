@@ -53,5 +53,5 @@ body {
     text-align: center;
     font-weight: bold;
     border-radius: 2em;
-    transition: all 30s ease-out;
+    transition: all .3s ease-out;
 }
