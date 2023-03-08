@@ -22,6 +22,8 @@
 // createNewPost();
 
 
+
+
 const POSTS_URL = 'https://jsonplaceholder.typicode.com/posts';
  let isLoading = false; 
 const createNewPost2 = async () => {
