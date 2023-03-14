@@ -16,6 +16,7 @@ console.log('One')
 
 
 
+
 // before promise 
 //one 
 //zero 
