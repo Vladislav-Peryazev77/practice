@@ -19,6 +19,7 @@
 // забывайте прописывать блоки catch. В них просто выводите ошибку в консоль при 
 // помощи console.error.
 
+
 const PHOTOS_URL = 'https://jsonplaceholder.typicode.com/photos';
 const photoContainer = document.querySelector('#data-container');
 
