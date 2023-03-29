@@ -12,7 +12,7 @@ setTimeout(() => {
   console.log('Zero');
 }, 0);
 runCode().then(() => console.log('Zero Promise Invoked'));
-console.log('One1');
+console.log('One12');
 
 // before promise
 //one
