@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // Вам дан HTML код.
 // Необходимо создать такую же структуру HTML-элемента через JavaScript и добавить
 // итоговый элементы внутрь тега body.
@@ -18,7 +18,7 @@
 //            Подтвердить
 //        </button>
 //    </form>
-// 1
+// 1.
 document.body.innerHTML = `
        <form class="create-user-form">
        <label>
@@ -42,10 +42,10 @@ const label1 = document.createElement('label');
 label1.textContent = 'Имя ';
 createUserForm.append(label1);
 const input1 = document.createElement('input');
-input1.setAttribute("type", "text");
+input1.setAttribute('type', 'text');
 input1.setAttribute('placeholder', 'Введите ваше имя');
-input1.setAttribute('name', 'userName')
-label1.append(input1)
+input1.setAttribute('name', 'userName');
+label1.append(input1);
 const label2 = document.createElement('label');
 createUserForm.append(label2);
 label2.textContent = 'Пароль ';
@@ -58,9 +58,3 @@ const button = document.createElement('button');
 button.textContent = 'Подтвердить';
 button.setAttribute('type', 'submit');
 createUserForm.append(button);
-
-
-
-
-
-
